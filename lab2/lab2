@@ -1,0 +1,32 @@
+Create the following resources using module strategy :
+
+1. VPC
+2. Subnets (Just two subnets)
+3. Security Group
+4. EC2 instance on one of the subnets and using the security group
+
+
+
+Root Directory
+              ---->modules
+                          ---->vpc
+                          ---->subnets
+                          ---->sg
+                          ---->ec2
+                          
+                          
+
+
+module "MODULE-NAME" {
+    source = ""
+}
+
+
+
+output "OUTPUT-NAME" {
+    value = aws_vpc.main.id
+}
+
+
+
+>>>>>>>> Routes and RDS are bonous <<<<<<<<<<
